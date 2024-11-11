@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_myeong_eon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FEC150"
+        android:fontFamily="@font/font"
+        android:text="명언"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_sangsik2"
+        app:layout_constraintEnd_toStartOf="@+id/button_sangsik2" />
+
+    <Button
+        android:id="@+id/button_sangsik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#FEC150"
+        android:fontFamily="@font/font"
+        android:text="상식"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_quiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#FEC150"
+        android:fontFamily="@font/font"
+        android:text="퀴즈"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_sangsik2"
+        app:layout_constraintStart_toEndOf="@+id/button_sangsik2" />
+
+    <Button
+        android:id="@+id/button_categori"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="46dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="친구"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="0dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="104dp"
+        android:background="#00FFFFFF"
+        android:rotationX="4"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="@+id/button_quiz2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_previous"
+        app:layout_constraintTop_toTopOf="@+id/text_author"
+        app:srcCompat="@drawable/arrow_button" />
+
+    <ImageButton
+        android:id="@+id/button_previous"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="22dp"
+        android:background="#00FFFFFF"
+        android:rotation="180"
+        android:rotationX="4"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="@+id/button_next"
+        app:layout_constraintEnd_toStartOf="@+id/button_next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_next"
+        app:srcCompat="@drawable/arrow_button" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="146dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yellow_square" />
+
+    <TextView
+        android:id="@+id/text_myeong_eon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="26dp"
+        android:text="&quot;친구란 무엇인가? 두 개의 몸에 깃든 하나의 영혼이다.&quot;"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/text_author"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="23dp"
+        android:text="아리스토텔레스"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
