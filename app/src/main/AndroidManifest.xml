@@ -23,6 +23,7 @@
         </activity>
 
         <activity android:name=".myeong_eon"/>
+        <activity android:name=".myeong_eon_categori"/>
     </application>
 
 </manifest>
