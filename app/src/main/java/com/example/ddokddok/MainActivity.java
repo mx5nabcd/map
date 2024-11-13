@@ -19,8 +19,18 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        Button imageButton =findViewById(R.id.button_myeong_eon);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        Button Button1 =findViewById(R.id.button_myeong_eon);
+        Button Button2 =findViewById(R.id.button_sangsik);
+
+        Button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, myeong_eon_categori.class);
+                startActivity(intent);
+            }
+        });
+
+        Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, myeong_eon.class);
