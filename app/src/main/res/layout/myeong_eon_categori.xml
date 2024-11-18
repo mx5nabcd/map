@@ -9,208 +9,165 @@
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginBottom="44dp"
         android:text="명언 카테고리"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_categori_love"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="34dp" />
 
     <Button
-        android:id="@+id/button_categori_love"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="111dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/font"
-        android:text="사랑"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_categori_success"
-        app:layout_constraintEnd_toStartOf="@+id/button_categori6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title" />
-
-    <Button
-        android:id="@+id/button_categori6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="111dp"
+        android:id="@+id/button_categori_friend"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="5dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/font"
         android:text="친구"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_categori13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_categori_love"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="128dp" />
 
     <Button
-        android:id="@+id/button_categori_life"
-        android:layout_width="0dp"
+        android:id="@+id/button_categori_hope"
+        android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="39dp"
+        android:layout_marginEnd="5dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/font"
-        android:text="인생"
+        android:text="희망"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_categori8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori_love" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="489dp" />
 
     <Button
-        android:id="@+id/button_categori8"
-        android:layout_width="0dp"
+        android:id="@+id/button_categori_time"
+        android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="시간"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/button_categori_book"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="독서"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button_categori_confidence"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="자신감"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <Button
+        android:id="@+id/button_categori_study"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="5dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/font"
         android:text="공부"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_categori_life"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori6" />
+        tools:layout_editor_absoluteY="218dp" />
 
     <Button
-        android:id="@+id/button_categori_success"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="110dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/font"
-        android:text="성공"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_categori11"
-        app:layout_constraintEnd_toStartOf="@+id/button_categori13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori_love" />
-
-    <Button
-        android:id="@+id/button_categori13"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/font"
-        android:text="독서"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_categori14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_categori_success"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori6" />
-
-    <Button
-        android:id="@+id/button_categori10"
-        android:layout_width="0dp"
+        android:id="@+id/button_categori_challenge"
+        android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="39dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/font"
-        android:text="이별"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_categori14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori_success" />
-
-    <Button
-        android:id="@+id/button_categori14"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/font"
-        android:text="시간"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_categori15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_categori10"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori13" />
-
-    <Button
-        android:id="@+id/button_categori11"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="172dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/font"
-        android:text="노력"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_categori15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori_success" />
-
-    <Button
-        android:id="@+id/button_categori15"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/font"
-        android:text="희망"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_categori16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_categori11"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori14" />
-
-    <Button
-        android:id="@+id/button_categori12"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="39dp"
+        android:layout_marginStart="5dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/font"
         android:text="도전"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_categori16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori11" />
+        tools:layout_editor_absoluteY="579dp" />
 
     <Button
-        android:id="@+id/button_categori16"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="82dp"
+        android:id="@+id/button_categori_bye"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/font"
-        android:text="자신감"
+        android:text="이별"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_categori12"
-        app:layout_constraintTop_toBottomOf="@+id/button_categori15" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/button_categori_life"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="인생"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <Button
+        android:id="@+id/button_categori_success"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="성공"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button_categori_effort"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="노력"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="489dp" />
+
+    <Button
+        android:id="@+id/button_categori_love"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/font"
+        android:text="사랑"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="128dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

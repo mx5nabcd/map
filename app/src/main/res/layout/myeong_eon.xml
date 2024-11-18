@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/button_categori"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="46dp"
@@ -107,6 +107,7 @@
         android:layout_marginEnd="67dp"
         android:layout_marginBottom="26dp"
         android:text="&quot;친구란 무엇인가? 두 개의 몸에 깃든 하나의 영혼이다.&quot;"
+        android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/text_author"
