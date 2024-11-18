@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".myeong_eon"/>
+        <activity android:name=".myeong_eon_friend"/>
         <activity android:name=".myeong_eon_categori"/>
     </application>
 
