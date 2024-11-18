@@ -14,7 +14,7 @@ public class myeong_eon_categori extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myeong_eon_categori);
 
-        Button Button_friend =findViewById(R.id.button_categori6);
+        Button Button_friend =findViewById(R.id.button_categori_friend);
 
         Button_friend.setOnClickListener(new View.OnClickListener() {
             @Override
