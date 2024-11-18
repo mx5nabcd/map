@@ -6,19 +6,25 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button_categori"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:layout_gravity="center"
             android:layout_marginVertical="50dp"
             android:backgroundTint="@color/black"
             android:fontFamily="@font/font"
-            android:text="친구"
+            android:text="사자성어"
+            android:textAlignment="center"
             android:textSize="34sp" />
 
         <FrameLayout
@@ -33,52 +39,45 @@
                 app:srcCompat="@drawable/yellow_square" />
 
             <TextView
-                android:id="@+id/text_author"
-                android:layout_width="277dp"
-                android:layout_height="50dp"
-                android:layout_gravity="bottom|center"
-                android:text="아리스토텔레스"
-                android:textAlignment="center"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/text_myeong_eon"
+                android:id="@+id/text_quiz"
                 android:layout_width="277dp"
                 android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:text="&quot;친구란 무엇인가? 두 개의 몸에 깃든 하나의 영혼이다.&quot;"
-                android:textAlignment="center"
+                android:text="백절불굴(百折不屈) : 백 번 꺾여도 굴하지 않는다"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
         </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="30dp"
+            android:layout_marginVertical="15dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button_previous"
-                android:layout_width="156dp"
-                android:layout_height="90dp"
+                android:id="@+id/button_o"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="25dp"
                 android:background="#00FFFFFF"
                 android:rotation="180"
                 android:rotationX="4"
                 android:scaleX="1"
                 android:scaleY="1"
-                app:srcCompat="@drawable/arrow_button" />
+                app:srcCompat="@drawable/o" />
 
             <ImageButton
-                android:id="@+id/button_next"
-                android:layout_width="156dp"
-                android:layout_height="90dp"
+                android:id="@+id/button_x"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="25dp"
                 android:background="#00FFFFFF"
                 android:rotationX="4"
                 android:scaleX="1"
                 android:scaleY="1"
-                app:srcCompat="@drawable/arrow_button" />
+                app:srcCompat="@drawable/x" />
         </LinearLayout>
 
         <LinearLayout
@@ -112,7 +111,6 @@
                 android:backgroundTint="#FEC150"
                 android:fontFamily="@font/font"
                 android:text="퀴즈" />
-
         </LinearLayout>
 
     </LinearLayout>
