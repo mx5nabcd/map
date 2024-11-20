@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
-            android:text="명언 카테고리"
+            android:text="상식 카테고리"
             android:textSize="34sp" />
 
         <LinearLayout
@@ -27,24 +27,24 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button_categori_love"
+                android:id="@+id/button_categori_english"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="사랑"
+                android:text="영어"
                 android:textAlignment="center"
                 android:textSize="34sp" />
 
             <Button
-                android:id="@+id/button_categori_friend"
+                android:id="@+id/button_categori_sajasunger"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="친구"
+                android:text="사자성어"
                 android:textAlignment="center"
                 android:textSize="34sp" />
         </LinearLayout>
@@ -57,24 +57,24 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button_categori_life"
+                android:id="@+id/button_categori_history"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="인생"
+                android:text="역사"
                 android:textAlignment="center"
                 android:textSize="34sp" />
 
             <Button
-                android:id="@+id/button_categori_study"
+                android:id="@+id/button_categori_spelling"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="공부"
+                android:text="맞춤법"
                 android:textAlignment="center"
                 android:textSize="34sp" />
         </LinearLayout>
@@ -87,24 +87,24 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button_categori_book"
+                android:id="@+id/button_categori_economy"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="독서"
+                android:text="경제"
                 android:textAlignment="center"
                 android:textSize="34sp" />
 
             <Button
-                android:id="@+id/button_categori_success"
+                android:id="@+id/button_categori_science"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="성공"
+                android:text="과학"
                 android:textAlignment="center"
                 android:textSize="34sp" />
         </LinearLayout>
@@ -117,87 +117,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button_categori_time"
+                android:id="@+id/button_categori_geography"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="시간"
+                android:text="지리"
                 android:textAlignment="center"
                 android:textSize="34sp" />
 
             <Button
-                android:id="@+id/button_categori_bye"
+                android:id="@+id/button_categori_sport"
                 android:layout_width="190dp"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/font"
-                android:text="이별"
+                android:text="스포츠"
                 android:textAlignment="center"
                 android:textSize="34sp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginVertical="10dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_categori_hope"
-                android:layout_width="190dp"
-                android:layout_height="70dp"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@color/black"
-                android:fontFamily="@font/font"
-                android:text="희망"
-                android:textAlignment="center"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/button_categori_effort"
-                android:layout_width="190dp"
-                android:layout_height="70dp"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@color/black"
-                android:fontFamily="@font/font"
-                android:text="노력"
-                android:textAlignment="center"
-                android:textSize="34sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginVertical="10dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_categori_confidence"
-                android:layout_width="190dp"
-                android:layout_height="70dp"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@color/black"
-                android:fontFamily="@font/font"
-                android:text="자신감"
-                android:textAlignment="center"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/button_categori_challenge"
-                android:layout_width="190dp"
-                android:layout_height="70dp"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@color/black"
-                android:fontFamily="@font/font"
-                android:text="도전"
-                android:textAlignment="center"
-                android:textSize="34sp" />
-        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
