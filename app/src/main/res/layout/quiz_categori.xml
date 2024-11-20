@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:text="퀴즈 카테고리"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_categori_english"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="영어"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/button_categori_sajasunger"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="사자성어"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_categori_history"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="역사"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/button_categori_spelling"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="맞춤법"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_categori_economy"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="경제"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/button_categori_science"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="과학"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_categori_geography"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="지리"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/button_categori_sport"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="스포츠"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_categori_myeong_eon"
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/font"
+                android:text="명언"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
