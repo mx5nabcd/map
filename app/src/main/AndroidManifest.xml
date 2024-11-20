@@ -24,6 +24,20 @@
 
         <activity android:name=".myeong_eon_friend"/>
         <activity android:name=".myeong_eon_categori"/>
+        <activity android:name=".myeong_eon_love"/>
+        <activity android:name=".myeong_eon_book"/>
+        <activity android:name=".myeong_eon_bye"/>
+        <activity android:name=".myeong_eon_challenge"/>
+        <activity android:name=".myeong_eon_confidence"/>
+        <activity android:name=".myeong_eon_effort"/>
+        <activity android:name=".myeong_eon_hope"/>
+        <activity android:name=".myeong_eon_life"/>
+        <activity android:name=".myeong_eon_study"/>
+        <activity android:name=".myeong_eon_success"/>
+        <activity android:name=".myeong_eon_time"/>
+        <activity android:name=".quiz_categori"/>
+        <activity android:name=".sang_sik"/>
+        <activity android:name=".sang_sik_categori"/>
     </application>
 
 </manifest>
