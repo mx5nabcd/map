@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_categori"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="50dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/font"
+            android:text="노력"
+            android:textSize="34sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/yellow_square" />
+
+            <TextView
+                android:id="@+id/text_author"
+                android:layout_width="277dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center"
+                android:text="아리스토텔레스"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_myeong_eon"
+                android:layout_width="277dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:text="&quot;친구란 무엇인가? 두 개의 몸에 깃든 하나의 영혼이다.&quot;"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_previous"
+                android:layout_width="156dp"
+                android:layout_height="90dp"
+                android:background="#00FFFFFF"
+                android:rotation="180"
+                android:rotationX="4"
+                android:scaleX="1"
+                android:scaleY="1"
+                app:srcCompat="@drawable/arrow_button" />
+
+            <ImageButton
+                android:id="@+id/button_next"
+                android:layout_width="156dp"
+                android:layout_height="90dp"
+                android:background="#00FFFFFF"
+                android:rotationX="4"
+                android:scaleX="1"
+                android:scaleY="1"
+                app:srcCompat="@drawable/arrow_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_myeong_eon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#FEC150"
+                android:fontFamily="@font/font"
+                android:text="명언" />
+
+            <Button
+                android:id="@+id/button_sangsik2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FEC150"
+                android:fontFamily="@font/font"
+                android:text="상식" />
+
+            <Button
+                android:id="@+id/button_quiz2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#FEC150"
+                android:fontFamily="@font/font"
+                android:text="퀴즈" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
