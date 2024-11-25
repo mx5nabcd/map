@@ -27,11 +27,11 @@ public class quiz_english extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("eradicate = 뿌리 뽑다.", true),
-            new OXQuestion("bin = 콩", false),
-            new OXQuestion("coma = 혼수상태", true),
-            new OXQuestion("anguish = 화나다", false),
-            new OXQuestion("guru = 학생", false)
+            new OXQuestion("eradicate : 뿌리 뽑다", true),
+            new OXQuestion("bin : 콩", false),
+            new OXQuestion("coma : 혼수상태", true),
+            new OXQuestion("anguish : 화나다", false),
+            new OXQuestion("guru : 권위자", true)
     };
 
     @Override

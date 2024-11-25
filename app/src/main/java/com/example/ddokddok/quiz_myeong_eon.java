@@ -27,11 +27,11 @@ public class quiz_myeong_eon extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("대한민국의 수도는 서울이다.", true),
-            new OXQuestion("지구는 평평하다.", false),
-            new OXQuestion("물의 끓는점은 100도이다.", true),
-            new OXQuestion("오징어는 척추동물이다.", false),
-            new OXQuestion("태양은 지구의 위성이다.", false)
+            new OXQuestion("정직과 미덕의 샘이자 근원은 훌륭한 교육에 있다 : 공자", false),
+            new OXQuestion("배우나 생각하지 않으면 공허하고, 생각하나 배우지 않으면 위험하다 : 공자", true),
+            new OXQuestion("절망은 마약이다. 절망은 생각을 무관심으로 잠재울 뿐이다 : 찰리 채플린", true),
+            new OXQuestion("지붕은 햇빛이 밝을 때 수리해야 합니다 : 오바마", false),
+            new OXQuestion("유행은 유행에 뒤떨어질 수 밖에 없게 만들어진다 : 가브리엘(코코)샤넬", true)
     };
 
     @Override

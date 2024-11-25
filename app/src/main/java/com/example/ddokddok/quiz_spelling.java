@@ -27,11 +27,11 @@ public class quiz_spelling extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("대한민국의 수도는 서울이다.", true),
-            new OXQuestion("지구는 평평하다.", false),
-            new OXQuestion("물의 끓는점은 100도이다.", true),
-            new OXQuestion("오징어는 척추동물이다.", false),
-            new OXQuestion("태양은 지구의 위성이다.", false)
+            new OXQuestion("안되", false),
+            new OXQuestion("웬만하면", true),
+            new OXQuestion("않되나요", false),
+            new OXQuestion("바램", false),
+            new OXQuestion("잠궜다", false)
     };
 
     @Override

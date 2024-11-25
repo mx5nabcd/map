@@ -27,11 +27,11 @@ public class quiz_economy extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("대한민국의 수도는 서울이다.", true),
-            new OXQuestion("지구는 평평하다.", false),
-            new OXQuestion("물의 끓는점은 100도이다.", true),
-            new OXQuestion("오징어는 척추동물이다.", false),
-            new OXQuestion("태양은 지구의 위성이다.", false)
+            new OXQuestion("한정된 물량만 판매해 소비자의 구매 욕구를 더욱 자극시키는 마케팅 기법을 헝거 마케팅이라고 한다.", true),
+            new OXQuestion("경제지표를 평가하는 과정에서 기준 시점과 비교시점의 상대적인 수치에 따라 그 결과에 큰 차이가 나타나는 현상은 기고효과이다.", false),
+            new OXQuestion("물가 불안이나 경기 침체에 대응하기 위한 정부의 시장개입이 과도하거나 변덕스러울 경우 발생하는 역효과를 경고하는 말을 샤워실의 바보라고 한다.", true),
+            new OXQuestion("대중에게 잘 알려지지 않았으나 세계시장을 지배하며 경쟁력 있는 우량기업(중소기업)을 히든 챔피언이라고 한다.", true),
+            new OXQuestion("기업이나 정부기관 내의 불법적인 행위나 부정행위를 봐주지 않고 지적하는 밀고자, 내부고발자를 휘슬브로커라고 한다.", false)
     };
 
     @Override

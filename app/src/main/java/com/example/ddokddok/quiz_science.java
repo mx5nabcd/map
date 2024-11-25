@@ -27,11 +27,11 @@ public class quiz_science extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("대한민국의 수도는 서울이다.", true),
-            new OXQuestion("지구는 평평하다.", false),
-            new OXQuestion("물의 끓는점은 100도이다.", true),
-            new OXQuestion("오징어는 척추동물이다.", false),
-            new OXQuestion("태양은 지구의 위성이다.", false)
+            new OXQuestion("개구리는 배꼽이 있다", false),
+            new OXQuestion("이산화탄소를 풍선에 넣으면 소리가 잘 전달된다.", true),
+            new OXQuestion("농도가 약한 물이 농도가 진한 쪽으로 이동하는 원리를 삼투압이라고 한다.", true),
+            new OXQuestion("드라이아이스는 질소로 만들어진다.", false),
+            new OXQuestion("종이는 전기가 통하지 않는다.", true)
     };
 
     @Override

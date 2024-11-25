@@ -27,11 +27,11 @@ public class quiz_sajasunger extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("대한민국의 수도는 서울이다.", true),
-            new OXQuestion("지구는 평평하다.", false),
-            new OXQuestion("물의 끓는점은 100도이다.", true),
-            new OXQuestion("오징어는 척추동물이다.", false),
-            new OXQuestion("태양은 지구의 위성이다.", false)
+            new OXQuestion("가가대소 : 너무 우스워서 껄껄 크게 웃음", true),
+            new OXQuestion("가급인족 : 집집마다 살림이 넉넉하고, 사람마다 의식에 부족함이 없음", true),
+            new OXQuestion("가기이방 : 이로움을 보자 의로움을 잊는다", false),
+            new OXQuestion("가농성진 : 상대방을 죽이면 결국 함께 죽는다", false),
+            new OXQuestion("가담항설 : 길거리에 떠도는 소문", false)
     };
 
     @Override

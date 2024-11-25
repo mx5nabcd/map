@@ -27,11 +27,11 @@ public class quiz_history extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("대한민국의 수도는 서울이다.", true),
-            new OXQuestion("지구는 평평하다.", false),
-            new OXQuestion("물의 끓는점은 100도이다.", true),
-            new OXQuestion("오징어는 척추동물이다.", false),
-            new OXQuestion("태양은 지구의 위성이다.", false)
+            new OXQuestion("선사시대와 역사시대를 구분하는 기준은 문자 사용을 기준으로 한다.", true),
+            new OXQuestion("부족의 우두머리인 족장을 비롯한 사람들 간의 계급이 생겨난 시기는 신석기 시대다.", false),
+            new OXQuestion("고조선의 사회 질서를 지키기 위해 만든 우리나라 최초의 법은 8조법이다.", true),
+            new OXQuestion("신라에서 해마다 추수가 끝나는 10월에 열렸던 행사는 동맹이다.", false),
+            new OXQuestion("가축의 이름을 따 부족연맹을 형성한 부여의 지방 행정구역은 사출도이다.", true)
     };
 
     @Override

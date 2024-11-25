@@ -27,11 +27,11 @@ public class quiz_geography extends AppCompatActivity {
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("대한민국의 수도는 서울이다.", true),
-            new OXQuestion("지구는 평평하다.", false),
-            new OXQuestion("물의 끓는점은 100도이다.", true),
-            new OXQuestion("오징어는 척추동물이다.", false),
-            new OXQuestion("태양은 지구의 위성이다.", false)
+            new OXQuestion("홍콩의 수도는 방콕이다.", false),
+            new OXQuestion("필리핀의 수도는 마닐라다.", true),
+            new OXQuestion("베트남의 수도는 하노이다.", true),
+            new OXQuestion("인도의 수도는 뉴델리다.", true),
+            new OXQuestion("싱가포르의 수도는 싱가포르다.", true)
     };
 
     @Override
