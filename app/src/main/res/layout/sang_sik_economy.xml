@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_categori"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginVertical="50dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/font"
+            android:text="경제"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/yellow_square" />
+
+            <TextView
+                android:id="@+id/text_sang_sik"
+                android:layout_width="277dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:text="백절불굴(百折不屈) : 백 번 꺾여도 굴하지 않는다"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_previous"
+                android:layout_width="156dp"
+                android:layout_height="90dp"
+                android:background="#00FFFFFF"
+                android:rotation="180"
+                android:rotationX="4"
+                android:scaleX="1"
+                android:scaleY="1"
+                app:srcCompat="@drawable/arrow_button" />
+
+            <ImageButton
+                android:id="@+id/button_next"
+                android:layout_width="156dp"
+                android:layout_height="90dp"
+                android:background="#00FFFFFF"
+                android:rotationX="4"
+                android:scaleX="1"
+                android:scaleY="1"
+                app:srcCompat="@drawable/arrow_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_myeong_eon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#FEC150"
+                android:fontFamily="@font/font"
+                android:text="명언" />
+
+            <Button
+                android:id="@+id/button_sangsik2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FEC150"
+                android:fontFamily="@font/font"
+                android:text="상식" />
+
+            <Button
+                android:id="@+id/button_quiz2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#FEC150"
+                android:fontFamily="@font/font"
+                android:text="퀴즈" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
