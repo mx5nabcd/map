@@ -35,8 +35,6 @@
         <activity android:name=".myeong_eon_study"/>
         <activity android:name=".myeong_eon_success"/>
         <activity android:name=".myeong_eon_time"/>
-        <activity android:name=".quiz_categori"/>
-        <activity android:name=".quiz_english"/>
         <activity android:name=".sang_sik_categori"/>
         <activity android:name=".sang_sik_sajasunger"/>
         <activity android:name=".sang_sik_english"/>
@@ -46,6 +44,16 @@
         <activity android:name=".sang_sik_science"/>
         <activity android:name=".sang_sik_geography"/>
         <activity android:name=".sang_sik_sport"/>
+        <activity android:name=".quiz_categori"/>
+        <activity android:name=".quiz_english"/>
+        <activity android:name=".quiz_sajasunger"/>"
+        <activity android:name=".quiz_history"/>
+        <activity android:name=".quiz_spelling"/>
+        <activity android:name=".quiz_economy"/>
+        <activity android:name=".quiz_science"/>
+        <activity android:name=".quiz_geography"/>
+        <activity android:name=".quiz_sport"/>
+        <activity android:name=".quiz_myeong_eon"/>
 
     </application>
 
