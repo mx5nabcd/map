@@ -36,6 +36,7 @@
         <activity android:name=".myeong_eon_success"/>
         <activity android:name=".myeong_eon_time"/>
         <activity android:name=".quiz_categori"/>
+        <activity android:name=".quiz_english"/>
         <activity android:name=".sang_sik"/>
         <activity android:name=".sang_sik_categori"/>
     </application>
