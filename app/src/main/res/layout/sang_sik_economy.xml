@@ -43,7 +43,7 @@
                 android:layout_width="277dp"
                 android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:text="백절불굴(百折不屈) : 백 번 꺾여도 굴하지 않는다"
+                android:text="버튼을 클릭해서 학습해보세요!"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
