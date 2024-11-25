@@ -37,8 +37,16 @@
         <activity android:name=".myeong_eon_time"/>
         <activity android:name=".quiz_categori"/>
         <activity android:name=".quiz_english"/>
-        <activity android:name=".sang_sik"/>
         <activity android:name=".sang_sik_categori"/>
+        <activity android:name=".sang_sik_sajasunger"/>
+        <activity android:name=".sang_sik_english"/>
+        <activity android:name=".sang_sik_history"/>
+        <activity android:name=".sang_sik_spelling"/>
+        <activity android:name=".sang_sik_economy"/>
+        <activity android:name=".sang_sik_science"/>
+        <activity android:name=".sang_sik_geography"/>
+        <activity android:name=".sang_sik_sport"/>
+
     </application>
 
 </manifest>
