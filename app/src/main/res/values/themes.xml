@@ -3,6 +3,7 @@
     <style name="Base.Theme.DDokDDok" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary"><![CDATA[#FEC150]]></item>
     </style>
 
     <style name="Theme.DDokDDok" parent="Base.Theme.DDokDDok" />
