@@ -1,7 +1,9 @@
 package com.example.ddokddok;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -48,6 +50,9 @@ public class myeong_eon_effort extends AppCompatActivity {
         TextView textView1 = findViewById(R.id.text_author); // TextView 참조
         ImageButton button = findViewById(R.id.button_next); // Button 참조
         ImageButton button1 = findViewById(R.id.button_previous);
+        Button Button_myeong_eon =findViewById(R.id.button_myeong_eon2);
+        Button Button_sangsik2 =findViewById(R.id.button_sangsik2);
+        Button Button_quiz =findViewById(R.id.button_quiz2);
 
         button.setOnClickListener(v -> {
             // 다음 인덱스로 이동 (배열의 끝이면 0으로 순환)
@@ -66,6 +71,30 @@ public class myeong_eon_effort extends AppCompatActivity {
             // 현재 텍스트를 TextView에 설정
             textView.setText(texts[currentIndex]);
             textView1.setText(secondTexts[currentIndex]);
+        });
+
+        Button_myeong_eon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(myeong_eon_effort.this, myeong_eon_categori.class);
+                startActivity(intent);
+            }
+        });
+
+        Button_sangsik2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(myeong_eon_effort.this, sang_sik_categori.class);
+                startActivity(intent);
+            }
+        });
+
+        Button_quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(myeong_eon_effort.this, quiz_categori.class);
+                startActivity(intent);
+            }
         });
 
     }

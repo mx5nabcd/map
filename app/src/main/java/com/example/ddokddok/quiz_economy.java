@@ -45,6 +45,33 @@ public class quiz_economy extends AppCompatActivity {
         text_quiz = findViewById(R.id.text_quiz);
         ImageButton oButton = findViewById(R.id.button_o);
         ImageButton xButton = findViewById(R.id.button_x);
+        Button Button_myeong_eon =findViewById(R.id.button_myeong_eon2);
+        Button Button_sangsik2 =findViewById(R.id.button_sangsik2);
+        Button Button_quiz =findViewById(R.id.button_quiz2);
+
+        Button_myeong_eon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(quiz_economy.this, myeong_eon_categori.class);
+                startActivity(intent);
+            }
+        });
+
+        Button_sangsik2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(quiz_economy.this, sang_sik_categori.class);
+                startActivity(intent);
+            }
+        });
+
+        Button_quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(quiz_economy.this, quiz_categori.class);
+                startActivity(intent);
+            }
+        });
 
         // 버튼 클릭 리스너 설정
         oButton.setOnClickListener(v -> checkAnswer(true));
@@ -52,6 +79,7 @@ public class quiz_economy extends AppCompatActivity {
 
         // 첫 문제 표시
         displayQuestion();
+
     }
 
     private void displayQuestion() {
@@ -91,5 +119,6 @@ public class quiz_economy extends AppCompatActivity {
                 .setCancelable(false)
                 .show();
     }
+
 
 }

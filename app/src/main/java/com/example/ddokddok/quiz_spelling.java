@@ -1,7 +1,10 @@
 package com.example.ddokddok;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -41,6 +44,33 @@ public class quiz_spelling extends AppCompatActivity {
         text_quiz = findViewById(R.id.text_quiz);
         ImageButton oButton = findViewById(R.id.button_o);
         ImageButton xButton = findViewById(R.id.button_x);
+        Button Button_myeong_eon =findViewById(R.id.button_myeong_eon2);
+        Button Button_sangsik2 =findViewById(R.id.button_sangsik2);
+        Button Button_quiz =findViewById(R.id.button_quiz2);
+
+        Button_myeong_eon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(quiz_spelling.this, myeong_eon_categori.class);
+                startActivity(intent);
+            }
+        });
+
+        Button_sangsik2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(quiz_spelling.this, sang_sik_categori.class);
+                startActivity(intent);
+            }
+        });
+
+        Button_quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(quiz_spelling.this, quiz_categori.class);
+                startActivity(intent);
+            }
+        });
 
         // 버튼 클릭 리스너 설정
         oButton.setOnClickListener(v -> checkAnswer(true));
