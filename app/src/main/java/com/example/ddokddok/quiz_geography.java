@@ -1,37 +1,35 @@
 package com.example.ddokddok;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class quiz_geography extends AppCompatActivity {
     private int currentQuestionIndex = 0;
     private TextView text_quiz;
+
+    // OXQuestion 클래스에 해설(explanation) 추가
     private static class OXQuestion {
         String question;
         boolean correctAnswer; // true는 O, false는 X
+        String explanation;  // 해설 추가
 
-        OXQuestion(String question, boolean correctAnswer) {
+        OXQuestion(String question, boolean correctAnswer, String explanation) {
             this.question = question;
             this.correctAnswer = correctAnswer;
+            this.explanation = explanation;
         }
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("홍콩의 수도는 방콕이다.", false),
-            new OXQuestion("필리핀의 수도는 마닐라다.", true),
-            new OXQuestion("베트남의 수도는 하노이다.", true),
-            new OXQuestion("인도의 수도는 뉴델리다.", true),
-            new OXQuestion("싱가포르의 수도는 싱가포르다.", true)
+            new OXQuestion("홍콩의 수도는 방콕이다.", false, "홍콩의 수도는 방콕이 아닌 홍콩입니다."),
+            new OXQuestion("필리핀의 수도는 마닐라다.", true, "필리핀의 수도는 마닐라입니다."),
+            new OXQuestion("베트남의 수도는 하노이다.", true, "베트남의 수도는 하노이입니다."),
+            new OXQuestion("인도의 수도는 뉴델리다.", true, "인도의 수도는 뉴델리입니다."),
+            new OXQuestion("싱가포르의 수도는 싱가포르다.", true, "싱가포르의 수도는 싱가포르입니다.")
     };
 
     @Override
@@ -66,16 +64,22 @@ public class quiz_geography extends AppCompatActivity {
         boolean isCorrect = (selectedAnswer == currentQuestion.correctAnswer);
 
         // 정답 체크 및 결과 표시
-        showResultDialog(isCorrect);
+        showResultDialog(isCorrect, currentQuestion.explanation);
     }
 
-    private void showResultDialog(boolean isCorrect) {
+    private void showResultDialog(boolean isCorrect, String explanation) {
         String message = isCorrect ? "정답입니다!" : "틀렸습니다!";
         String correctAnswer = questions[currentQuestionIndex].correctAnswer ? "O" : "X";
 
+        // 틀렸을 때 해설도 함께 표시
+        String resultMessage = message + "\n정답: " + correctAnswer;
+        if (!isCorrect) {
+            resultMessage += "\n해설: " + explanation;
+        }
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("결과")
-                .setMessage(message + "\n정답: " + correctAnswer)
+                .setMessage(resultMessage)
                 .setPositiveButton("다음 문제", (dialog, which) -> {
                     currentQuestionIndex++;
                     displayQuestion();
@@ -84,5 +88,4 @@ public class quiz_geography extends AppCompatActivity {
                 .setCancelable(false)
                 .show();
     }
-
 }

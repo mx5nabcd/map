@@ -1,37 +1,35 @@
 package com.example.ddokddok;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class quiz_history extends AppCompatActivity {
     private int currentQuestionIndex = 0;
     private TextView text_quiz;
+
+    // OXQuestion 클래스에 해설(explanation) 추가
     private static class OXQuestion {
         String question;
         boolean correctAnswer; // true는 O, false는 X
+        String explanation;  // 해설 추가
 
-        OXQuestion(String question, boolean correctAnswer) {
+        OXQuestion(String question, boolean correctAnswer, String explanation) {
             this.question = question;
             this.correctAnswer = correctAnswer;
+            this.explanation = explanation;
         }
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("선사시대와 역사시대를 구분하는 기준은 문자 사용을 기준으로 한다.", true),
-            new OXQuestion("부족의 우두머리인 족장을 비롯한 사람들 간의 계급이 생겨난 시기는 신석기 시대다.", false),
-            new OXQuestion("고조선의 사회 질서를 지키기 위해 만든 우리나라 최초의 법은 8조법이다.", true),
-            new OXQuestion("신라에서 해마다 추수가 끝나는 10월에 열렸던 행사는 동맹이다.", false),
-            new OXQuestion("가축의 이름을 따 부족연맹을 형성한 부여의 지방 행정구역은 사출도이다.", true)
+            new OXQuestion("선사시대와 역사시대를 구분하는 기준은 문자 사용을 기준으로 한다.", true, "선사시대는 문자가 없었던 시대이고, 역사시대는 문자가 사용되던 시대입니다."),
+            new OXQuestion("부족의 우두머리인 족장을 비롯한 사람들 간의 계급이 생겨난 시기는 신석기 시대다.", false, "계급 사회는 청동기 시대부터 형성되었으며, 신석기 시대는 비교적 평등한 사회였습니다."),
+            new OXQuestion("고조선의 사회 질서를 지키기 위해 만든 우리나라 최초의 법은 8조법이다.", true, "고조선의 8조법은 고대 사회에서 중요한 법으로, 왕의 권력을 강화하고 사회 질서를 유지하려 했습니다."),
+            new OXQuestion("신라에서 해마다 추수가 끝나는 10월에 열렸던 행사는 동맹이다.", false, "동맹은 신라에서 열렸던 행사이지만, 추수가 끝나는 10월이 아니라 10월에 열렸던 행사는 '거신제'입니다."),
+            new OXQuestion("가축의 이름을 따 부족연맹을 형성한 부여의 지방 행정구역은 사출도이다.", true, "부여는 4개의 지방으로 나누어졌으며, 이 지방들은 각기 가축의 이름을 따 사출도로 불렸습니다.")
     };
 
     @Override
@@ -66,16 +64,22 @@ public class quiz_history extends AppCompatActivity {
         boolean isCorrect = (selectedAnswer == currentQuestion.correctAnswer);
 
         // 정답 체크 및 결과 표시
-        showResultDialog(isCorrect);
+        showResultDialog(isCorrect, currentQuestion.explanation);
     }
 
-    private void showResultDialog(boolean isCorrect) {
+    private void showResultDialog(boolean isCorrect, String explanation) {
         String message = isCorrect ? "정답입니다!" : "틀렸습니다!";
         String correctAnswer = questions[currentQuestionIndex].correctAnswer ? "O" : "X";
 
+        // 틀렸을 때 해설도 함께 표시
+        String resultMessage = message + "\n정답: " + correctAnswer;
+        if (!isCorrect) {
+            resultMessage += "\n해설: " + explanation;
+        }
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("결과")
-                .setMessage(message + "\n정답: " + correctAnswer)
+                .setMessage(resultMessage)
                 .setPositiveButton("다음 문제", (dialog, which) -> {
                     currentQuestionIndex++;
                     displayQuestion();
@@ -84,5 +88,4 @@ public class quiz_history extends AppCompatActivity {
                 .setCancelable(false)
                 .show();
     }
-
 }

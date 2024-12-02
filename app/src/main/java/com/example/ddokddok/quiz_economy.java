@@ -19,19 +19,21 @@ public class quiz_economy extends AppCompatActivity {
     private static class OXQuestion {
         String question;
         boolean correctAnswer; // true는 O, false는 X
+        String explanation;
 
-        OXQuestion(String question, boolean correctAnswer) {
+        OXQuestion(String question, boolean correctAnswer, String explanation) {
             this.question = question;
             this.correctAnswer = correctAnswer;
+            this.explanation = explanation;
         }
     }
 
     private OXQuestion[] questions = {
-            new OXQuestion("한정된 물량만 판매해 소비자의 구매 욕구를 더욱 자극시키는 마케팅 기법을 헝거 마케팅이라고 한다.", true),
-            new OXQuestion("경제지표를 평가하는 과정에서 기준 시점과 비교시점의 상대적인 수치에 따라 그 결과에 큰 차이가 나타나는 현상은 기고효과이다.", false),
-            new OXQuestion("물가 불안이나 경기 침체에 대응하기 위한 정부의 시장개입이 과도하거나 변덕스러울 경우 발생하는 역효과를 경고하는 말을 샤워실의 바보라고 한다.", true),
-            new OXQuestion("대중에게 잘 알려지지 않았으나 세계시장을 지배하며 경쟁력 있는 우량기업(중소기업)을 히든 챔피언이라고 한다.", true),
-            new OXQuestion("기업이나 정부기관 내의 불법적인 행위나 부정행위를 봐주지 않고 지적하는 밀고자, 내부고발자를 휘슬브로커라고 한다.", false)
+            new OXQuestion("한정된 물량만 판매해 소비자의 구매 욕구를 더욱 자극시키는 마케팅 기법을 헝거 마케팅이라고 한다.", true, "헝거 마케팅은 소비자의 부족한 느낌을 자극하여 구매욕구를 높이는 전략입니다."),
+            new OXQuestion("경제지표를 평가하는 과정에서 기준 시점과 비교시점의 상대적인 수치에 따라 그 결과에 큰 차이가 나타나는 현상은 기고효과이다.", false, "이 현상은 기고효과가 아니라 '기준 효과'입니다."),
+            new OXQuestion("물가 불안이나 경기 침체에 대응하기 위한 정부의 시장개입이 과도하거나 변덕스러울 경우 발생하는 역효과를 경고하는 말을 샤워실의 바보라고 한다.", true, "샤워실의 바보는 정부의 지나친 시장 개입으로 발생하는 역효과를 경고하는 말입니다."),
+            new OXQuestion("대중에게 잘 알려지지 않았으나 세계시장을 지배하며 경쟁력 있는 우량기업(중소기업)을 히든 챔피언이라고 한다.", true, "히든 챔피언은 주로 경쟁력이 뛰어난 중소기업을 일컫는 용어입니다."),
+            new OXQuestion("기업이나 정부기관 내의 불법적인 행위나 부정행위를 봐주지 않고 지적하는 밀고자, 내부고발자를 휘슬브로커라고 한다.", false, "내부고발자는 '휘슬블로어(whistleblower)'입니다. '휘슬브로커'는 잘못된 용어입니다.")
     };
 
     @Override
@@ -66,16 +68,21 @@ public class quiz_economy extends AppCompatActivity {
         boolean isCorrect = (selectedAnswer == currentQuestion.correctAnswer);
 
         // 정답 체크 및 결과 표시
-        showResultDialog(isCorrect);
+        showResultDialog(isCorrect, currentQuestion.explanation);
     }
 
-    private void showResultDialog(boolean isCorrect) {
+    private void showResultDialog(boolean isCorrect, String explanation) {
         String message = isCorrect ? "정답입니다!" : "틀렸습니다!";
         String correctAnswer = questions[currentQuestionIndex].correctAnswer ? "O" : "X";
 
+        String resultMessage = message + "\n정답: " + correctAnswer;
+        if (!isCorrect) {
+            resultMessage += "\n해설: " + explanation;
+        }
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("결과")
-                .setMessage(message + "\n정답: " + correctAnswer)
+                .setMessage(resultMessage)
                 .setPositiveButton("다음 문제", (dialog, which) -> {
                     currentQuestionIndex++;
                     displayQuestion();

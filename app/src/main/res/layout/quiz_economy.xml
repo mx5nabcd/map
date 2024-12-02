@@ -41,7 +41,7 @@
             <TextView
                 android:id="@+id/text_quiz"
                 android:layout_width="277dp"
-                android:layout_height="170dp"
+                android:layout_height="226dp"
                 android:layout_gravity="center"
                 android:text="백절불굴(百折不屈) : 백 번 꺾여도 굴하지 않는다"
                 android:textSize="24sp"
